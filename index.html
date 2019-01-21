@@ -1,9 +1,158 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>home
+<title>Profile
 </title>
+<link rel="stylesheet" type="text/css" href="home.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
 </head>
 <body>
-<h1>home page not available</h1>
+    <!--navigation bar-->
+        <div class="topnav" id="myTopnav">
+                <a href="index.html" class="active">Vairagi</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Signup</a>
+                
+              
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+     <!--sidebar-->         
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <div class="col-sm-12 col-md-2 sidebar">
+        <div class="sidenav">
+                <div class="container" > 
+                        <img src="backpacker.jpg" alt="Avatar" class="image" style="width:100px">
+                        <div class="middle">
+                          <div class="text"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Change</button></div>
+                        </div>
+                    <a href="#places">Places</a>
+                    <a href="#trips">Trips</a>
+                    <a href="#bookings">Bookings</a><br>
+                   
+                </div>
+        </div>
+    </div>
+    <!--main page-->
+        <div class="main">
+                <div class="jumbotron">
+                        <div class="container text-center">
+                          <h1>
+                             Vairagi
+                          </h1>      
+                          <p>YOUR PERSONAL TRAVEL BUDDY</p>
+                          <!--places part-->
+                          <div class="container-fluid bg-3 text-center" id="places">    
+                                <h3>Places on the checklist</h3><br>
+                                <div class="row">
+                                  <div class="col-sm-3">
+                                    <p>Hawa Mahal</p>
+                                    <img src="jaipur.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                  </div>
+                                  <div class="col-sm-3"> 
+                                    <p>Havelock Island</p>
+                                    <img src="havelock.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                  </div>
+                                  <div class="col-sm-3"> 
+                                    <p>Bandhavgarh Park</p>
+                                    <img src="tiger.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <p>Dharamsala</p>
+                                    <img src="dharamsala.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                  </div>
+                                </div>
+                              </div><br>
+                              
+                              <div class="container-fluid bg-3 text-center">    
+                                <div class="row">
+                                  <div class="col-sm-3">
+                                    <p>Varkala Beach</p>
+                                    <img src="varkala.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                  </div>
+                                  <div class="col-sm-3"> 
+                                    <p>Thikse Monastery</p>
+                                    <img src="thikse.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                  </div>
+                                  <div class="col-sm-3"> 
+                                    <p>Mysore Palace</p>
+                                    <img src="mysore.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <p>Khajuraho</p>
+                                    <img src="khajuraho.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                  </div>
+                                </div>
+                              </div><br><br>
+                              <!--trips part-->
+                              <div class="container-fluid bg-3 text-center" id="trips">    
+                                    <h3>Trips Done</h3><br>
+                                    <div class="row">
+                                      <div class="col-sm-3">
+                                        <p>Kheerganga Trek</p>
+                                        <img src="kheerganga.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                      </div>
+                                      <div class="col-sm-3"> 
+                                        <p>Taj Mahal</p>
+                                        <img src="tajmahal.jpeg" class="img-responsive" style="width:100%" alt="Image">
+                                      </div>
+                                      <div class="col-sm-3"> 
+                                        <p>Sikkim</p>
+                                        <img src="sikkkim.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                      </div>
+                                      <div class="col-sm-3">
+                                        <p>Qutub Minar</p>
+                                        <img src="qutub.jpeg" class="img-responsive" style="width:100%" alt="Image">
+                                      </div>
+                                    </div>
+                                  </div><br>
+                                  <!--Bookings part-->
+                                  <div class="container-fluid bg-3 text-center" id="bookings">    
+                                        <h3>You Don't have any upcoming bookings</h3><br>
+                                        </div>
+                                
+                              
+                              <footer class="container-fluid text-center">
+                                <p>Image soure - Google</p>
+                              </footer>
+                              
+                        </div>
+                      </div>   
+        </div>
+        <!--modal for changing the profile picture-->
+        <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                        <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">Upload Photo</h4>
+                                </div>
+                                <div class="modal-body">
+                                        <input type="file" name="pic" accept="image/*" class="file">
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                          
+                            </div>
+                          </div>
+<!--script for top navbar button working-->
+<script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+        </script>
 </body>
-<html>
+</html>

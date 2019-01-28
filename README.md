@@ -7,3 +7,6 @@ Creating a website frontend using HTML , CSS , Bootstrap
 - Creating a responsive SignUP Page
 ## Task 3
 - Creating a reponsive Home Page
+
+### Trainer 
+Swati Tyagi
